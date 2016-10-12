@@ -5,14 +5,10 @@
   text-align: left;
   text-align-last: right;
 }
-.break:after {
-  content:"\000A";
-  white-space: pre;
-}
 
 u1 {
   font-size: inherit;
   font-family: inherit;
   color: inherit;
-  text-align: leftt;
+  text-align: right;
 }
