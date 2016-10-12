@@ -1,8 +1,12 @@
-p {
+#first-paragraph{
+  font-family: helvetica, sans-serif;
   color: black;
   font-size: 14px;
-  text-align: left;
+  text-align: margin-left;
 }
 u1 {
-  font-size: 14px;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-align: margin-right;
 }
