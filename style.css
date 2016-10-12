@@ -2,11 +2,14 @@
   font-family: helvetica, sans-serif;
   color: black;
   font-size: 14px;
-  text-align: margin-left;
+  text-align: left;
+}
+.break{
+  display:block;
 }
 u1 {
   font-size: inherit;
   font-family: inherit;
   color: inherit;
-  text-align: margin-right;
+  text-align: right;
 }
