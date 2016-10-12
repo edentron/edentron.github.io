@@ -1,13 +1,14 @@
-#first-paragraph{
+#first-paragraph {
   font-family: helvetica, sans-serif;
   color: black;
   font-size: 14px;
   text-align: left;
+    .break{
+      display:block;
+    }
 }
-.break{
-  display:block;
-}
-u1 {
+
+#fave-activities {
   font-size: inherit;
   font-family: inherit;
   color: inherit;
