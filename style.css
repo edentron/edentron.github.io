@@ -4,6 +4,7 @@
   font-size: 14px;
   text-align: left;
   text-align-last: right;
+  white-space: pre-line;
 }
 
 #faves-list {
@@ -11,4 +12,5 @@
   font-family: inherit;
   color: inherit;
   text-align: right;
+  white-space: inherit;
 }
