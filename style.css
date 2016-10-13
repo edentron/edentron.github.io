@@ -159,3 +159,18 @@ pre {
 	margin-top: 20px;
 	margin-bottom: 10px;
 	}
+
+  #first-paragraph {
+    font-family: helvetica, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    white-space: pre-line;
+  }
+
+  #faves-list {
+    font-size: 14px;
+    font-family: helvetica, sans-serif;
+    color: inherit;
+    text-align: right;
+    white-space: inherit;
+  }
