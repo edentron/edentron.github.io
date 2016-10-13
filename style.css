@@ -90,14 +90,14 @@ img {
 	}
 .nowrap {
 	white-space: nowrap;
-	font-size: 10px;
+	font-size: 14px;
 	font-weight: bold;
 	margin-top: 0;
 	margin-bottom: 0;
 /* must be combined with nobr in html for ie5win */
 	}
 .tiny {
-	font-size: 9px;
+	font-size: 14px;
 	line-height: 16px;
 	margin-top: 15px;
 	margin-bottom: 5px;
@@ -154,12 +154,11 @@ html>body #right {
 	width: 120px; /* ie5win fudge ends */
 	}
 pre {
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 22px;
 	margin-top: 20px;
 	margin-bottom: 10px;
 	}
-
   #first-paragraph {
     font-family: helvetica, sans-serif;
     font-size: 14px;
