@@ -5,12 +5,7 @@ body {
 	color: #ccc;
 	background-color: #333;
 	}
-a {
-	text-decoration: none;
-	font-weight: lighter;;
-	color:  #ccc;
-	outline: none;
-	}
+
 a:visited {
 	color:  #ccc;
 	}
