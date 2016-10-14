@@ -139,7 +139,7 @@ html>body #left {
 	margin: 20px;
 	padding: 10px;
 	border: 5px solid #ccc;
-	background: #666;
+	background: #657;
 	width: 150px; /* ie5win fudge begins */
 	voice-family: "\"}\"";
 	voice-family:inherit;
@@ -154,6 +154,7 @@ pre {
 	margin-top: 20px;
 	margin-bottom: 10px;
 	}
+
   #first-paragraph {
     font-family: helvetica, sans-serif;
     font-size: 14px;
@@ -162,7 +163,7 @@ pre {
   }
 
   #faves-list {
-    font-size: 14px;
+    font-size: 12px;
     font-family: helvetica, sans-serif;
     color: inherit;
     text-align: right;
