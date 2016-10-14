@@ -85,13 +85,7 @@ body {
 	img {
 		border: 0;
 		}
-	.nowrap {
-		white-space: nowrap;
-		font-size: 14px;
-		font-weight: bold;
-		margin-top: 0;
-		margin-bottom: 0;
-	/* must be combined with nobr in html for ie5win */
+
 		}
 	.tiny {
 		font-size: 14px;
