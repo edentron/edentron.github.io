@@ -35,6 +35,7 @@ body {
 	/* weird ie5win bug: all line-height to font-size ratios must agree or box gets pushed around. UPDATE: this has turned out to be very rare. my current recommendation is IGNORE this warning. at the moment i'm leaving it in only in case the issue turns up again. possibly the original bug in march 2001 was caused by an unusual combination of factors, although this solved it at the time.*/
 
 	h1 {
+		background-color: lightgreen;
 		font-size: 24px;
 		line-height: 44px;
 		font-weight: bold;
@@ -88,7 +89,7 @@ body {
 
 		}
 	.tiny {
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 16px;
 		margin-top: 15px;
 		margin-bottom: 5px;
@@ -145,7 +146,7 @@ body {
 		width: 120px; /* ie5win fudge ends */
 		}
 	pre {
-		font-size: 14px;
+		font-size: 10px;
 		line-height: 22px;
 		margin-top: 20px;
 		margin-bottom: 10px;
