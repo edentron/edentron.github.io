@@ -29,7 +29,7 @@ body {
 	  margin-left: 10px;
 		white-space: pre-line;
 		font-family: helvetica, sans-serif;
-		text-align: left;
+		text-align: justify;
 		}
 
 	/* weird ie5win bug: all line-height to font-size ratios must agree or box gets pushed around. UPDATE: this has turned out to be very rare. my current recommendation is IGNORE this warning. at the moment i'm leaving it in only in case the issue turns up again. possibly the original bug in march 2001 was caused by an unusual combination of factors, although this solved it at the time.*/
