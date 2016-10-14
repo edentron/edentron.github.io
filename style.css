@@ -22,11 +22,14 @@ body {
 		font-weight: bold;
 		}
 	p {
-		font-size: 10px;
+		font-size: 12px;
 		line-height: 22px;
 		margin-top: 20px;
 		margin-bottom: 10px;
 	  margin-left: 10px;
+		white-space: pre-line;
+		font-family: helvetica, sans-serif;
+		text-align: left;
 		}
 
 	/* weird ie5win bug: all line-height to font-size ratios must agree or box gets pushed around. UPDATE: this has turned out to be very rare. my current recommendation is IGNORE this warning. at the moment i'm leaving it in only in case the issue turns up again. possibly the original bug in march 2001 was caused by an unusual combination of factors, although this solved it at the time.*/
@@ -154,15 +157,8 @@ body {
 		margin-bottom: 10px;
 		}
 
-  #first-paragraph {
-    font-family: helvetica, sans-serif;
-    font-size: 14px;
-    text-align: left;
-    white-space: pre-line;
-  }
-
   #faves-list {
-    font-size: 12px;
+    font-size: 10px;
     font-family: helvetica, sans-serif;
     color: inherit;
     text-align: right;
