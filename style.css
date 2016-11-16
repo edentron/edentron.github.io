@@ -159,6 +159,3 @@ body {
     text-align: right;
     white-space: inherit;
   }
-$(document).ready(function(){
-	$("h1").css.("color", "green");
-});
