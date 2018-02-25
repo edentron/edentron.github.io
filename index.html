@@ -1,93 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Mia Encarnacion</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 500px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #356582;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
+<title>Encarnacion</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
 
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/*Image scaling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*List styling*/
+ul.b {
+    list-style-type: square;
+}
+
+/*List font*/
+li.s {
+	font-size: 14px;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 0px;
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/*Small font for sidebar*/
+p.navsmall {
+	font-family: Arial, Verdana;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    padding: 5px;
+    text-align: center;
+    background: #ddd;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+ left: 0;
+ border-radius: 3px 0 0 3px;
+ }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+    .row {   
+        flex-direction: column;
     }
-  </style>
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Mia Encarnacion</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="/organizations.html" title="Organizations">Organizations</a></li>
-        <li><a href="index.html" title="Resume">Resume</a></li>
-        <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown">Contact<span class="caret"></span></a>
-      <ul class="dropdown-menu">
-      <li><strong> Email</strong></li>
-      <li role="presentation" class="divider"></li>
-      <li> miaencar@buffalo.edu</li>
-    </ul>
-    </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<div class="header">
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img_nature_wide.jpg" style="width:100%; height:100%;">
   
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-    </div>
-    <div class="col-sm-8 text-left">
-      <h1 class="text-right">Mia Encarnacion</h1>
-      <h2 class="text-right">Computer Science Major</h2>      
-      <hr>
-      <img class="pull-right" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/14051554_10207189617638253_4452498708171728764_n.jpg?oh=83851e531f83b508332fb80c9c4f15b4&oe=58B03DEF" alt="Yours Truly" style="width:300px;height:400px">
-      <h3 class="text-left">About</h3>
-      <p> I am Mia Encarnacion, and I am a computer science major currently attending the University at Buffalo in Buffalo, New York.
-        I hope to further the research in the field of artificial intelligence so that we will one day see the first fully 
-        autonomous robotic system. I want to blur the lines between human and machine. Computer programming is my main passion, but 
-        my heart also lies in the arts. I am deeply invested in music and illustration. I draw, sing, dance, 
-        and practice piano in my free time. 
-      </p>
-      <div style="clear:both"></div>
-    </div>
-    <div class="col-sm-2 sidenav">
-    </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_fjords_wide.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+
+<div class="navbar">
+  <a href="#">Resume</a>
+  <a href="#">Projects</a>
+  <a href="#">Contact</a>
+  <a href="#" class="right">More</a>
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>About Me</h2>
+      <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/26167445_1398132260296435_6787272656962140283_n.jpg?oh=8c13814ced160d85454b113ef358d723&oe=5B0574BF" alt="Me in a Storm Trooper helmet">
+      <p class="navsmall">Computer Science Major</p>
+      <p class="navsmall">Undergraduate TA</p>
+      <p class="navsmall">Star Wars Enthusiast</p>
+      <h3 align="center">More Text</h3>
+      <p align="center">Lorem ipsum dolor sit ame.</p>
+      <div class="fakeimg" style="height:60px;"align="center">Image</div><br>
+      <div class="fakeimg" style="height:60px;"align="center">Image</div><br>
+      <div class="fakeimg" style="height:60px;"align="center">Image</div>
   </div>
+  <div class="main">
+      <h2>Mia Encarnacion</h2>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>The More You Know</p>
+      <p style="font-size: 14px">I'm a sophomore computer science major at the University at Buffalo, and I currently work as a teaching assistant for the class CSE115: Intro to CS Majors 1. I volunteer at Buffalo School 45, working PTO events or assisting the ESL teachers. I'm always on the go, and I'm always looking for new volunteer or internship experiences.
+      <p>Interests</p>
+      <p style="font-size: 14px">Within the computer science field, I am currently interested in artificial intelligence and cybersecurity. However, my life isn't all binary. There's more to life than 1's and 0's! I also write creatively, sing, dance, and draw in my free time.</p>
+      <p>Experiences<p>
+      <p style="font-size: 14px">In the past, I managed a Facebook page for a small business, Precious Pets, and I am currently building a website for a freelance photography business, Cydonia Moon Photography. I occasionally serve as a model for Cydonia Moon Photography, and once modeled for Mike Mondello.</p>
+      <p>Goals</p>
+      <p style="font-size: 14px"><u1 class="b">
+      <li class="s">Master python and javascript</li>
+      <li class="s">Create a chat bot</li>
+      <li class="s">Design an app</li>
+      <li class="s">Make a video game.</li></u1></p>
+  </div>
+</div>
+
+<div class="footer">
+  
 </div>
 
 </body>
