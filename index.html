@@ -116,10 +116,22 @@ p.navsmall {
 }
 * {box-sizing:border-box}
 
+@media (max-width: 1094px) {
+	.side{
+    	display: none;
+    }
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 700px) {
     .row {   
         flex-direction: column;
+    }
+    .header {
+    	display: none;
+    }
+    .side {
+    	display: inline;
     }
 }
 
@@ -148,19 +160,11 @@ p.navsmall {
 <div class="row">
   <div class="side">
       <h2>About Me</h2>
-      <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/26167445_1398132260296435_6787272656962140283_n.jpg?oh=8c13814ced160d85454b113ef358d723&oe=5B0574BF" alt="Me in a Storm Trooper helmet">
-      <p align="center">Computer Science Major</p>
-      <p align="center">Undergraduate TA</p>
-      <p align="center">Star Wars Enthusiast</p>
-      <h3 align="center">More Text</h3>
-      <p align="center">Lorem ipsum dolor sit ame.</p>
-      <div class="fakeimg" style="height:60px;"align="center">Image</div><br>
-      <div class="fakeimg" style="height:60px;"align="center">Image</div><br>
-      <div class="fakeimg" style="height:60px;"align="center">Image</div>
-  </div>
+      <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/26167445_1398132260296435_6787272656962140283_n.jpg?oh=8c13814ced160d85454b113ef358d723&oe=5B0574BF" alt="Me in a Storm Trooper helmet"></div>
+      
   <div class="main">
       <h2>Mia Encarnacion</h2>
-      <div class="fakeimg" style="height:200px;">Image</div>
+      <h5>Computer Science Major | Undergraduate TA | Star Wars Enthusiast</h5>
       <p>The More You Know</p>
       <p style="font-size: 14px">I'm a sophomore computer science major at the University at Buffalo, and I currently work as a teaching assistant for the class CSE115: Intro to CS Majors 1. I volunteer at Buffalo School 45, working PTO events or assisting the ESL teachers. I'm always on the go, and I'm always looking for new volunteer or internship experiences.
       <p>Interests</p>
