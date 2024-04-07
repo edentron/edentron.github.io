@@ -30,6 +30,9 @@
   .h2 {
     color:#FAF3EA;
   }
+  .txt-coffee-pot {
+    color:#67595E;
+  }
   .logo-small {
     color: #67595E;
     font-size: 50px;
@@ -110,7 +113,7 @@
 }
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
 
   <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -120,7 +123,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Home</a>
+      <a class="navbar-brand" href="#home">Home</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -161,7 +164,7 @@
   
   <!-- Container (Services Section) -->
   <div class="container-fluid text-center bg-rose" id="services">
-    <h2 class="h2">SERVICES</h2>
+    <h2 class="txt-coffee-pot">SERVICES</h2>
     <h4>What I offer</h4>
     <br>
     <div class="row">
@@ -275,7 +278,7 @@
 </div>
 
 <footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
+  <a href="#home" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
   <p>Made By Roman Rose 2024</p>
@@ -286,7 +289,7 @@
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  $(".navbar a, footer a[href='#home']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== ""){
       // Prevent default anchor click behavior
