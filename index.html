@@ -17,6 +17,9 @@
   .container-fluid {
     padding: 60px 50px;
   }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
   .logo {
     font-size: 200px;
   }
@@ -31,22 +34,30 @@
 <body>
 
 <div class="jumbotron text-center">
-  <img src="editingicon.png" class="img-circle" alt="Bird">
+  <img src="editingicon.png" class="img-circle" style="width:50%" alt="Pen">
   <h1>Roman Rose</h1> 
   <p>Freelance Editing Services</p> 
 </div>
 
 <!-- Container (About Section) -->
 <div class="container-fluid">
-  <h2>About the Editor</h2>
-  <h4>Lorem ipsum..</h4>      
-  <p>I have been editing essays and emails for friends and family all my life. I used to read the dictionary in school! I am what they call a "word nerd," and I wear that honor with pride.</p>
-  
-  <p>I have a bachelor's degree in Computer Science and have spent 4 years working in the field. My occupational experience is in technical writing and documentation for internal IT and development teams. However, I beta read, proofread, and edit for all genres. My favorite genres are fantasy and Regency romance.</p>
-  
-  <p>I love being a part of the writing process and witnessing an author's growth over time. I primarily work with new authors and self-publishers. I'd love to be a part of your story!</p>
-  <button class="btn btn-default btn-lg">Get in Touch</button>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About the Editor</h2>
+      <h4>I'm a word nerd</h4>      
+      <p>I have been editing essays and emails for friends and family all my life. I used to read the dictionary in school! I am what they call a "word nerd," and I wear that honor with pride.</p>
+      
+      <p>I have a bachelor's degree in Computer Science and have spent 4 years working in the field. My occupational experience is in technical writing and documentation for internal IT and development teams. However, I beta read, proofread, and edit for all genres. My favorite genres are fantasy and Regency romance.</p>
+      
+      <p>I love being a part of the writing process and witnessing an author's growth over time. I primarily work with new authors and self-publishers. I'd love to be a part of your story!</p>
+      <button class="btn btn-default btn-lg">Get in Touch</button>
+      <div class="col-sm-4">
+      <span class="glyphicon glyphicon-envelope"></span>
+    </div>
+    </div>
+  </div>
 </div>
+  
 
 </body>
 </html>
