@@ -73,6 +73,27 @@
     background-color: #EED6D3;
     color: #67595E;
   }
+.navbar {
+    margin-bottom: 0;
+    background-color: #A49393;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #FAF3EA !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #A49393 !important;
+    background-color: #FAF3EA !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
   @media screen and (max-width: 768px) {
   .col-sm-4 {
     text-align: center;
@@ -83,6 +104,27 @@
 </head>
 <body>
 
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
   <div class="jumbotron text-center">
     <img src="editingicon.png" class="img-circle" style="width:10%" alt="Pen">
     <h1>Roman Rose</h1> 
@@ -110,7 +152,7 @@
   </div>
   
   <!-- Container (Services Section) -->
-  <div class="container-fluid text-center">
+  <div class="container-fluid text-center bg-rose">
     <h2>SERVICES</h2>
     <h4>What I offer</h4>
     <br>
@@ -133,7 +175,7 @@
     </div>
   </div>
 <!-- Container (Pricing Section) -->
-<div class="container-fluid bg-rose">
+<div class="container-fluid">
   <div class="text-center">
     <h2>APRIL DEALS</h2>
   </div>
