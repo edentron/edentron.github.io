@@ -31,6 +31,44 @@
     color: #67595E;
     font-size: 200px;
   }
+    .panel {
+    border: 1px solid #A49393; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #A49393;
+    background-color: #fff !important;
+    color: #A49393;
+  }
+  .panel-heading {
+    color: #FAF3EA !important;
+    background-color: #A49393 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #EED6D3;
+    color: #67595E;
+  }
   @media screen and (max-width: 768px) {
   .col-sm-4 {
     text-align: center;
@@ -52,7 +90,7 @@
     <div class="row">
       <div class="col-sm-8">
         <h2>About the Editor</h2>
-        <h4>I'm a word nerd</h4>      
+        <h4>I'm a word nerd!</h4>      
         <p>I have been editing essays and emails for friends and family all my life. I used to read the dictionary in school! I am what they call a "word nerd," and I wear that honor with pride.</p>
         
         <p>I have a bachelor's degree in Computer Science and have spent 4 years working in the field. My occupational experience is in technical writing and documentation for internal IT and development teams. However, I beta read, proofread, and edit for all genres. My favorite genres are fantasy and Regency romance.</p>
@@ -89,6 +127,71 @@
       </div>
     </div>
   </div>
-
+<!-- Container (Pricing Section) -->
+<div class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Beta Reading</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Line Editing</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Contact Me</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Proofreading</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Contact Me</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
 </body>
 </html>
